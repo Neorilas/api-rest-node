@@ -3,7 +3,7 @@
 // Cargamos el módulo de mongoose
 var mongoose = require('mongoose');
 
-// Usaremos los schemas
+// Definimos que usaremos los Schemas
 var Schema = mongoose.Schema;
 
 // Creamos el objeto del schema que tendrá dos campos tipo string

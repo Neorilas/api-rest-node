@@ -5,17 +5,14 @@ var Nota = require('../models/nota');
 
 // Creamos un método en el controlador, este de prueba
 function pruebas(req, res) {
-    // Devolvemos una respuesta
     res.status(200).send({
         message: 'Ruta de prueba de mi api RESTful'
     });
 };
 function saveNota(req, res) {
     var nota = new Nota();
-
     // Recogemos los parametros que nos llegan por POST
     var params = req.body;
-
     // Comprobamos que nos llega el nombre
     if (params.nombre) {
         // Asignamos valor a las propiedades del objeto Nota
